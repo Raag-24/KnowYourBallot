@@ -3,125 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Know Your Leaders</title>
+    <title>Know Your Ballot</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-100">
+
+    <!-- Header -->
     <header class="bg-gray-300 p-4 flex justify-between items-center">
         <div class="flex items-center space-x-2">
-            <img class="logo" src="logo.jpg" alt="">
+            <img src="logo.jpg" alt="Logo" class="w-12 h-12 rounded-full">
             <h1 class="text-lg font-bold">KnowYourBallot</h1>
         </div>
         <nav>
-            <ul class="flex space-x-4">
-                <li><a href="#" class="text-gray-700">Home</a></li>
-                <li><a href="#" class="text-gray-700">About</a></li>
-                <li><a href="#" class="text-gray-700">Elections</a></li>
-                <li><a href="#" class="text-gray-700">Help</a></li>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="text-gray-700 hover:underline">Home</a></li>
+                <li><a href="#" class="text-gray-700 hover:underline">About</a></li>
+                <li><a href="#" class="text-gray-700 hover:underline">Elections</a></li>
+                <li><a href="#" class="text-gray-700 hover:underline">Help</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section class="text-center p-8 bg-white">
-        <h1 class="text-2xl font-italic">Welcome to Know Your Leaders Shape Your Nation</h1>
-        <h2 class="text-6xl italic text-left"><br>Know Your Leaders<br>Shape Your Nation</h2>
-        <div class="flex items-center justify-between">
-        <p class="text-gray-600 mt-2 text-left"><br>This website is designed to introduce <br>first-time voters to the platform.</p>
-        <img class="w-128 h-128" src="main_img.png" alt="">
-        </div>
-        <button class="mt-4 bg-black text-white px-4 py-2 rounded">Find Candidates</button>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
-    <div class="container mx-auto p-8 flex flex-wrap items-center justify-between">
-        <div class="w-full md:w-1/2 p-4">
-            <h2 class="text-3xl font-bold italic heading">Navigating the Voting Process</h2>
-            <p class="text-gray-600 mt-2">Learn about the different steps involved in first-time voting.</p>
-            <div class="mt-4">
-                <p class="font-semibold">TO KNOW YOUR RIGHTS :</p>
-                <button class="bg-black text-white px-4 py-2 rounded m-2">Voter</button>
-                <button class="bg-black text-white px-4 py-2 rounded m-2">Candidate</button>
-            </div>
+    <!-- Hero Section -->
+    <section class="p-12 bg-white text-center">
+        <h1 class="text-gray-500 text-xl">Welcome to <span class="font-bold">Know Your Leaders Shape Your Nation</span></h1>
+        <h2 class="text-6xl font-bold italic mt-2">Know Your Leaders <br> Shape Your Nation</h2>
+        
+        <div class="flex justify-between items-center mt-8">
+            <p class="text-gray-600 text-lg text-left">This website is designed to introduce <br> first-time voters to the platform.</p>
+            <img src="main_img.png" alt="Voting Illustration" class="w-1/2 h-auto">
         </div>
-        <div class="w-full md:w-2/5 bg-gray-200 p-8 rounded text-center">
-            <h2 class="text-2xl font-semibold text-gray-700 italic">First Vote</h2>
-            <p class="text-gray-600 mt-2">Polling Place Details</p>
-            <p class="text-gray-600">Absentee Voting and Mail-In Ballots</p>
-            <button class="mt-4 bg-black text-white px-4 py-2 rounded">Request a Ballot</button>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section class="text-center p-8">
-        <h2 class="text-2xl font-bold">Web Flow</h2>
-        <img class="center" src="x.png" alt="Web Flow" class="mx-auto mt-4">
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
-    <section class="text-center p-8 bg-gray-200">
+        <button class="mt-6 bg-black text-white px-6 py-3 rounded-lg text-lg hover:bg-gray-800">Find Candidates</button>
+    </section>
+
+    <!-- Voting Process Section -->
+    <section class="text-center p-12 bg-gray-200">
+        <h2 class="text-3xl font-bold italic">Navigating the Voting Process</h2> <br>
+        <p class="text-gray-600 mt-2"><span>Learn about the different steps involved in first-time voting:-</span></p>
+        <div class="mt-4">
+            <button class="bg-black text-white px-6 py-3 rounded-lg m-2">Voter</button>
+            <button class="bg-black text-white px-6 py-3 rounded-lg m-2">Candidate</button>
+        </div>
+    </section>
+
+    <!-- Web Flow Section -->
+    <section class="text-center p-12">
+        <h2 class="text-3xl font-bold">Web Flow</h2>
+        <img src="webflow.jpg" alt="Web Flow" class="mx-auto mt-4 w-2/3">
+    </section>
+
+    <!-- Additional Resources -->
+    <section class="p-12 bg-gray-200 text-center">
         <h2 class="text-2xl font-bold">Additional Resources</h2>
         <div class="flex justify-center mt-4">
-            <div class="bg-white p-4 shadow-lg m-2">Election News 
-                <p>Explore the latest election news and <br> upcoming dates below. <br>
-                    Learn more about upcoming elections - Click below
-                </p>
-                <button class="mt-4 bg-black text-white px-4 py-2 rounded">Click here</button>
+            <div class="bg-white p-6 shadow-lg m-4 w-1/3">
+                <h3 class="font-semibold ">Election News</h3> <br> <br>
+                <p class="text-gray-600">Explore the latest election news and upcoming dates below.
+                    Learn more about upcoming elections – click below.</p>
+                <button class="mt-4 bg-black text-white px-6 py-3 rounded-lg">Click Here</button>
             </div>
-            <div class="bg-gray-700 text-white p-4 shadow-lg m-2">About Us
-                <p>We empower first-time voters by <br> providing clear, accessible candidate <br>
-                    information to help them confidently <br> participate in elections and make <br> informed decisions, 
-                    fostering greater <br> civic engagement. 
-                </p>
+            <div class="bg-gray-700 text-white p-6 shadow-lg m-4 w-1/3">
+                <h3 class="font-semibold">About Us</h3> <br>
+                <p>We empower first-time voters by providing clear, accessible candidate information to help them confidently participate in elections and make informed decisions, fostering greater civic engagement.</p>
             </div>
         </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
-    <section class="text-center p-8">
-        <h2 class="text-2xl font-bold">Contact Us</h2>
-        <p class="text-gray-600 mt-2">If you need assistance, reach out to us via email or phone.</p>
-        <button class="mt-4 bg-black text-white px-4 py-2 rounded"><a href="tel:">Contact</a></button>
+    <!-- Contact Section -->
+    <section class="text-center p-12">
+        <h2 class="text-3xl font-bold">Contact Us</h2>
+        <p class="text-gray-600">If you need assistance, reach out to us via email or phone.</p>
+        <button class="mt-4 bg-black text-white px-6 py-3 rounded-lg"><a href="tel:">Contact</a></button>
     </section>
 
     <!-- Footer -->
     <footer class="w-full bg-white py-8">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start px-6">
-            
-            <!-- Logo and Text -->
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6">
             <div class="text-center md:text-left">
-                <img class ="centre" src="logo.png" alt="KnowyourBallot" class="w-16 mx-auto md:mx-0">
-                <h2 class="text-lg font-semibold mt-2">KnowyourBallot</h2>
+                <img src="logo.jpg" alt="KnowYourBallot" class="w-16 mx-auto md:mx-0">
+                <h2 class="text-lg font-semibold mt-2">KnowYourBallot</h2>
                 <p class="text-gray-600 text-sm">Know Your Leaders Shape Your Nation</p>
             </div>
 
-            <!-- Quick Links -->
             <div class="text-center md:text-left mt-6 md:mt-0">
                 <h3 class="text-gray-800 font-semibold">Quick Links</h3>
                 <ul class="text-gray-600 mt-2 space-y-1">
@@ -132,7 +97,6 @@
                 </ul>
             </div>
 
-            <!-- Connect With Us -->
             <div class="text-center md:text-left mt-6 md:mt-0">
                 <h3 class="text-gray-800 font-semibold">Connect With Us</h3>
                 <ul class="text-gray-600 mt-2 space-y-1">
@@ -142,34 +106,11 @@
                     <li><a href="#" class="hover:underline">YouTube</a></li>
                 </ul>
             </div>
-
-            <!-- Legal -->
-            <div class="text-center md:text-left mt-6 md:mt-0">
-                <h3 class="text-gray-800 font-semibold">Legal</h3>
-                <ul class="text-gray-600 mt-2 space-y-1">
-                    <li><a href="#" class="hover:underline">Terms of Use</a></li>
-                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:underline">Accessibility</a></li>
-                    <li><a href="#" class="hover:underline">Sitemap</a></li>
-                </ul>
-            </div>
-
         </div>
     </footer>
 </body>
 </html>
 
-<style>
-    .center {
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-    }
-    .logo {
-        width: 65px;
-        border-radius: 50px;
-    }
-    #heading {
-        padding: 100px;
-    }
-</style>
+
+
+

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voter Registration</title>
+    <title>Candidate Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,8 +13,7 @@
             color: black;
         }
         .header {
-            background: #333;
-            color: white;
+            background: #999;
             padding: 15px 40px;
             display: flex;
             justify-content: space-between;
@@ -29,7 +28,7 @@
         }
         .nav-links a {
             text-decoration: none;
-            color: white;
+            color: black;
             font-weight: bold;
         }
         .content {
@@ -39,12 +38,22 @@
             padding: 30px;
             border: 5px solid black;
         }
-        h1 {
-            font-size: 1.5em;
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
-        p {
+        .info p {
             font-size: 1em;
             line-height: 1.6;
+        }
+        .info strong {
+            font-weight: bold;
+        }
+        .education {
+            margin-top: 20px;
+            font-weight: bold;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -60,13 +69,20 @@
     </div>
 
     <div class="content">
-        <h1>I. Before You Vote (Preparation)*</h1>
-        <p><strong>Voter Registration:</strong></p>
-        <p><strong>Eligibility:</strong> Clearly state the age requirement, residency requirements, and any other criteria for voter registration. Explain how to register (online, in person, by mail).</p>
-        <p><strong>Registration Deadline:</strong> Prominently display the deadline for voter registration for upcoming elections.</p>
-        <p><strong>Voter ID:</strong> Explain the required identification documents for registration and at the polling place. Include examples.</p>
-        <p><strong>Checking Registration Status:</strong> Provide a link or instructions on how voters can verify their registration status and polling place.</p>
-        <p><strong>Change of Address:</strong> Explain the process for updating voter registration information if someone has moved.</p>
+        <div class="info">
+            <p><strong>Candidate’s Full Name:</strong> Godam Nagesh</p>
+            <p><strong>Date of Birth:</strong> 21 October 1964</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Status:</strong> Married</p>
+            <p><strong>Age:</strong> 60 Years</p>
+            <p><strong>Assets:</strong> Rs 3,09,16,833 · 3 Crore+</p>
+            <p><strong>Liabilities:</strong> Rs 29,01,575 · 29 Lacs+</p>
+        </div>
+
+        <p class="education">Educational Details</p>
+        <p><strong>Category:</strong> Post Graduate MA, 1993 M.Ed. 1991 in Osmania University Hyderabad</p>
+        <p><strong>Number of Criminal Cases:</strong> 1</p>
+        <p><strong>Achievements:</strong> He was amongst the youngest legislators in the Legislative Assembly at the time.</p>
     </div>
 </body>
 </html>

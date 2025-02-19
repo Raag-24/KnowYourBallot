@@ -11,6 +11,7 @@
             padding: 0;
             background-color: #f8f8f8;
             color: black;
+            position: relative;
         }
         .container {
             display: flex;
@@ -73,6 +74,13 @@
         .right-section button:hover {
             background: #444;
         }
+        .logo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 80px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -92,5 +100,8 @@
             <button>Request a Ballot</button>
         </div>
     </div>
+    
+    <!-- Logo at Bottom Right Corner -->
+    <img src="logo.png" alt="Logo" class="logo">
 </body>
 </html>

@@ -1,184 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Know Your Ballot</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="bg-gray-100">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Know Your Ballot</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="bg-gray-100">
 
-    <!-- Header -->
-    <header class="bg-gray-300 p-4 flex justify-between items-center">
-        <div class="flex items-center space-x-2">
-            <img src="logo.jpg" alt="Logo" class="w-12 h-12 rounded-full">
-            <h1 class="text-lg font-bold">KnowYourBallot</h1>
-        </div>
-        <nav>
-            <ul class="flex space-x-6">
-                <li><a href="#" class="text-gray-700 hover:underline">Home</a></li>
-                <li><a href="#" class="text-gray-700 hover:underline">About</a></li>
-                <li><a href="#" class="text-gray-700 hover:underline">Elections</a></li>
-                <li><a href="#" class="text-gray-700 hover:underline">Help</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="p-12 bg-white text-center">
-        <h1 class="text-gray-500 text-xl">Welcome to <span class="font-bold">Know Your Leaders Shape Your Nation</span></h1>
-        <h2 class="text-6xl font-bold italic mt-2">Know Your Leaders <br> Shape Your Nation</h2>
-        
-        <div class="flex justify-between items-center mt-8">
-            <p class="text-gray-600 text-lg text-left">This website is designed to introduce <br> first-time voters to the platform.</p>
-            <img src="main_img.png" alt="Voting Illustration" class="w-1/2 h-auto">
-        </div>
-
-        <button>class="mt-6 bg-black text-white px-6 py-3 rounded-lg text-lg hover:bg-gray-800">Find Candidates</button>
-    </section>
-
-    <!-- Voting Process Section -->
-    <section class="text-center p-12 bg-gray-200">
-        <h2 class="text-3xl font-bold italic">Navigating the Voting Process</h2> <br>
-        <p class="text-gray-600 mt-2"><span>Learn about the different steps involved in first-time voting:-</span></p>
-        <div class="mt-4">
-            <button class="bg-black text-white px-6 py-3 rounded-lg m-2">Voter</button>
-            <button class="bg-black text-white px-6 py-3 rounded-lg m-2">Candidate</button>
-        </div>
-    </section>
-
-    <!-- Web Flow Section -->
-    <section class="text-center p-12">
-        <h2 class="text-3xl font-bold">Web Flow</h2>
-        <img src="webflow.jpg" alt="Web Flow" class="mx-auto mt-4 w-2/3">
-    </section>
-
-    <!-- Additional Resources -->
-    <section class="p-12 bg-gray-200 text-center">
-        <h2 class="text-2xl font-bold">Additional Resources</h2>
-        <div class="flex justify-center mt-4">
-            <div class="bg-white p-6 shadow-lg m-4 w-1/3">
-                <h3 class="font-semibold ">Election News</h3> <br> <br>
-                <p class="text-gray-600">Explore the latest election news and upcoming dates below.
-                    Learn more about upcoming elections – click below.</p>
-                <button class="mt-4 bg-black text-white px-6 py-3 rounded-lg">Click Here</button>
+        <!-- Header -->
+        <header class="bg-gray-300 p-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="logo.jpg" alt="Logo" class="w-12 h-12 rounded-full">
+                <h1 class="text-lg font-bold">KnowYourBallot</h1>
             </div>
-            <div class="bg-gray-700 text-white p-6 shadow-lg m-4 w-1/3">
-                <h3 class="font-semibold">About Us</h3> <br>
-                <p>We empower first-time voters by providing clear, accessible candidate information to help them confidently participate in elections and make informed decisions, fostering greater civic engagement.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <div class="contact-container">
-        <div class="text-content">
-            <h1>Contact Us</h1>
-            <p>
-                If you have any queries regarding the voting process, polling booth location, voter registration, or any election-related concerns, you can reach out to your Polling Booth Officer for assistance.
-            </p>
-            <button>Contact</button>
-        </div>
-        <div class="image-container">
-            <img src="contact_us.png" alt="Contact Us Illustration">
-        </div>
-    </div>
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #e8e8e8; /* Light gray background */
-    }
-
-    .contact-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 50px;
-        max-width: 1200px;
-        margin: auto;
-        background-color: #f5f5f5; /* Slightly lighter background for contrast */
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .text-content {
-        flex: 1;
-        padding-right: 20px;
-    }
-
-    .text-content h1 {
-        font-size: 3rem;
-        color: #000;
-        margin-bottom: 20px;
-    }
-
-    .text-content p {
-        font-size: 1.2rem;
-        color: #333;
-        line-height: 1.6;
-        margin-bottom: 30px;
-    }
-    .text-content button {
-        background-color: #000;
-        color: #fff;
-        border: none;
-        padding: 15px 30px;
-        font-size: 1rem;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .text-content button:hover {
-        background-color: #333;
-    }
-
-    .image-container {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-    }
-
-    .image-container img {
-        max-width: 90%;
-        height: auto;
-        border-radius: 10px;
-    }
-</style>
-    <!-- Footer -->
-    <footer class="w-full bg-white py-8">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6">
-            <div class="text-center md:text-left">
-                <img src="logo.jpg" alt="KnowYourBallot" class="w-16 mx-auto md:mx-0">
-                <h2 class="text-lg font-semibold mt-2">KnowYourBallot</h2>
-                <p class="text-gray-600 text-sm">Know Your Leaders Shape Your Nation</p>
-            </div>
-
-            <div class="text-center md:text-left mt-6 md:mt-0">
-                <h3 class="text-gray-800 font-semibold">Quick Links</h3>
-                <ul class="text-gray-600 mt-2 space-y-1">
-                    <li><a href="#" class="hover:underline">Home</a></li>
-                    <li><a href="#" class="hover:underline">About</a></li>
-                    <li><a href="#" class="hover:underline">Elections</a></li>
-                    <li><a href="#" class="hover:underline">Help</a></li>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="text-gray-700 hover:underline">Home</a></li>
+                    <li><a href="#" class="text-gray-700 hover:underline">About</a></li>
+                    <li><a href="#" class="text-gray-700 hover:underline">Elections</a></li>
+                    <li><a href="#" class="text-gray-700 hover:underline">Help</a></li>
                 </ul>
-            </div>
+            </nav>
+        </header>
 
-            <div class="text-center md:text-left mt-6 md:mt-0">
-                <h3 class="text-gray-800 font-semibold">Connect With Us</h3>
-                <ul class="text-gray-600 mt-2 space-y-1">
-                    <li><a href="#" class="hover:underline">Facebook</a></li>
-                    <li><a href="#" class="hover:underline">Twitter</a></li>
-                    <li><a href="#" class="hover:underline">Instagram</a></li>
-                    <li><a href="#" class="hover:underline">YouTube</a></li>
-                </ul>
+        <!-- Hero Section -->
+        <section class="p-12 bg-white text-center">
+            <h1 class="text-gray-500 text-xl">Welcome to <span class="font-bold">Know Your Leaders Shape Your Nation</span></h1>
+            <h2 class="text-6xl font-bold italic mt-2">Know Your Leaders <br> Shape Your Nation</h2>
+            
+            <div class="flex justify-between items-center mt-8">
+                <p class="text-gray-600 text-lg text-left">This website is designed to introduce first-time voters to the platform.<br> This website is designed to provide first-time voters with a comprehensive introduction to the platform, helping them navigate the voting process with ease and confidence. <br> <br>Whether you're new to elections or looking for guidance, this platform ensures you have all the essential information to make an informed decision.</p>
+                <img src="main_img.png" alt="Voting Illustration"   >
             </div>
-        </div>
-    </footer>
-</body>
-</html>
+            <a href="candidate_search.html" target="_self" class="button mt-6 bg-black text-white px-6 py-3 rounded-lg text-lg hover:bg-gray-800">Find Candidates</a>
+
+            <!--<button class="mt-6 bg-black text-white px-6 py-3 rounded-lg text-lg hover:bg-gray-800">Find Candidates</button>-->
+    
+        </section>
+
+        <!-- Voting Process Section -->
+        <section class="text-center p-12 bg-gray-200">
+            <h2 class="text-3xl font-bold italic">Navigating the Voting Process</h2> <br>
+            <p class="text-gray-600 mt-2"><span>Learn about the different steps involved in first-time voting:-</span></p>
+            <div class="mt-4">
+               <a href="voter_rules.html" target="_blank"><button class="bg-black text-white px-6 py-3 rounded-lg m-2" >Voter</button></a>
+                <a href="candidates_rules.html" target="_balnk"><button class="bg-black text-white px-6 py-3 rounded-lg m-2">Candidate</button></a>
+
+            </div>
+        </section>
+
+        <!-- Web Flow Section -->
+        <section class="text-center p-12">
+            <h2 class="text-3xl font-bold">Web Flow</h2>
+            <img src="webflow.jpg" alt="Web Flow" class="mx-auto mt-4 w-2/3">
+        </section>
+
+        <!-- Additional Resources -->
+        <section class="p-12 bg-gray-200 text-center">
+            <h2 class="text-2xl font-bold">Additional Resources</h2>
+            <div class="flex justify-center mt-4">
+                <div class="bg-white p-6 shadow-lg m-4 w-1/3">
+                    <h2 class="font-bold text-2xl">Election News</h2> <br> <br>
+                    <p class="text-gray-600">Explore the latest election news and upcoming dates below.
+                        Learn more about upcoming elections – click below.</p>
+                    <button class="mt-4 bg-black text-white px-6 py-3 rounded-lg">Click Here</button>
+                </div>
+                <div class="bg-gray-700 text-white p-6 shadow-lg m-4 w-1/3">
+                    <h3 class="font-bold text-2xl">About Us</h3> <br>
+                    <p>We empower first-time voters by providing clear, accessible candidate information to help them confidently participate in elections and make informed decisions, fostering greater civic engagement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="text-center p-12">
+            <h2 class="text-3xl font-bold">Contact Us</h2>
+            <p class="text-gray-600">If you need assistance, reach out to us via email or phone.</p>
+            <button class="mt-4 bg-black text-white px-6 py-3 rounded-lg"><a href="tel:">Contact</a></button>
+        </section>
+
+        <!-- Footer -->
+        <footer class="w-full bg-white py-8">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+                <div class="text-center md:text-left">
+                    <img src="logo.jpg" alt="KnowYourBallot" class="w-16 mx-auto md:mx-0">
+                    <h2 class="text-lg font-semibold mt-2">KnowYourBallot</h2>
+                    <p class="text-gray-600 text-sm">Know Your Leaders Shape Your Nation</p>
+                </div>
+
+                <div class="text-center md:text-left mt-6 md:mt-0">
+                    <h3 class="text-gray-800 font-semibold">Quick Links</h3>
+                    <ul class="text-gray-600 mt-2 space-y-1">
+                        <li><a href="#" class="hover:underline">Home</a></li>
+                        <li><a href="#" class="hover:underline">About</a></li>
+                        <li><a href="#" class="hover:underline">Elections</a></li>
+                        <li><a href="#" class="hover:underline">Help</a></li>
+                    </ul>
+                </div>
+
+                <div class="text-center md:text-left mt-6 md:mt-0">
+                    <h3 class="text-gray-800 font-semibold">Connect With Us</h3>
+                    <ul class="text-gray-600 mt-2 space-y-1">
+                        <li><a href="#" class="hover:underline">Facebook</a></li>
+                        <li><a href="#" class="hover:underline">Twitter</a></li>
+                        <li><a href="#" class="hover:underline">Instagram</a></li>
+                        <li><a href="#" class="hover:underline">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer> 
+    </body>
+    </html>
 
 
 

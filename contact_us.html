@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            padding: 40px;
+            background-color: white;
+        }
+
+        .main-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 40px;
+        }
+
+        /* Left Section */
+        .contact-card {
+            background-color: #F5F5F5;
+            padding: 40px;
+            width: 45%;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .officer-title {
+            font-style: italic;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+        }
+
+        .info-section {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .info-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Right Section */
+        .search-section {
+            width: 55%;
+        }
+
+        .search-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .search-description {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .search-form {
+            margin-top: 30px;
+        }
+
+        .input-label {
+            display: block;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .search-button {
+            width: 100%;
+            padding: 15px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .search-button:hover {
+            background-color: #333;
+        }
+
+        .logo-container {
+            text-align: right;
+            margin-top: 40px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+        }
+
+        .logo-text {
+            font-size: 0.8rem;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .contact-card,
+            .search-section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="main-title">Contact Details</h1>
+    
+    <div class="container">
+        <!-- Left Section -->
+        <div class="contact-card">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-vFceasQrc0dEPNFz4UpMxz4F3bAnNt.png" alt="Chief Electoral Officer" class="avatar">
+            
+            <h2 class="officer-title">Chief Electoral Officer</h2>
+            
+            <div class="info-section">
+                <h3 class="info-title">Name</h3>
+                <p>Sri C.Sudharshan Reddy, IAS</p>
+            </div>
+            
+            <div class="info-section">
+                <h3 class="info-title">Contact</h3>
+                <p>040-23455303</p>
+            </div>
+            
+            <div class="info-section">
+                <h3 class="info-title">Email</h3>
+                <p>sudharshanceo3@eci.gov.in</p>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="search-section">
+            <h2 class="search-title">Know Your Polling Booth In-charge Officers</h2>
+            
+            <p class="search-description">
+                Easily locate your Polling Booth Officer by entering your constituency name in the search bar. 
+                This feature allows you to quickly access officer details, including their contact information 
+                and polling booth address.
+            </p>
+
+            <div class="search-form">
+                <label for="constituency" class="input-label">Enter Your Constituency</label>
+                <input 
+                    type="text" 
+                    id="constituency" 
+                    class="search-input" 
+                    placeholder="Enter Constituency"
+                >
+                <button class="search-button">Search</button>
+            </div>
+
+            <div class="logo-container">
+                <img src="ballot-icon.png" alt="Know Your Ballot Logo" class="logo">
+                <p class="logo-text">KnowYourBallot</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

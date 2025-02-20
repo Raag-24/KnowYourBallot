@@ -105,4 +105,4 @@ Understand the Project Philosophy: Review the README to understand the project's
 Maintain Code Consistency: Adhere to the project's coding style.
 Write Documentation: Clearly document your changes.
 Submit a Pull Request: Follow standard Git etiquette.
-![Sample image of the database containing the Candidate details](database_img.jpg)
+![Sample image of the database containing the Candidate details] goto:- database_img.jpg
